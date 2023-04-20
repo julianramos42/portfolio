@@ -1,0 +1,121 @@
+.home{
+    background-color: rgb(51, 54, 70);
+    height: 100vh;
+    padding: 75px 10vw 75px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+i{
+    color: #efefef;
+}
+
+.home .myInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.home .myInfo .logo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.home .myInfo .name{
+    color: #efefef;
+}
+
+.home .myInfo .name h1{
+    font-size: 60px;
+}
+
+.home .myInfo .name .barrita{
+    margin-top: 10px;
+    width: 50px;
+    border: 4px solid rgb(255, 194, 92);
+}
+
+.home .myInfo .redes{
+    display: flex;
+    gap: 20px;
+}
+
+.home .myInfo .redes a{
+    transition: .4s;
+}
+
+.home .myInfo .redes a:hover{
+    transform: translateY(-5px);
+}
+
+/*  */
+.home .techInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.home .techInfo .anchors{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 20px;
+}
+
+.home .techInfo .anchors>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.home .techInfo .anchors a{
+    text-decoration: none;
+    color: rgb(113, 116 , 127);
+    font-size: 25px;
+}
+
+.home .techInfo .anchors i{
+    margin-top: 7px;
+}
+
+.home .techInfo .anchors .active{
+    color: #efefef;
+}
+
+.home .techInfo .anchors .puntito{
+    width: 10px;
+    border: 5px solid rgb(255, 194, 92);
+    border-radius: 50%;
+}
+
+.home .techInfo .techDescription{
+    color: #efefef;
+}
+
+.home .techInfo .contactMe{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: .4s;
+}
+
+.home .techInfo .contactMe:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.home .techInfo .contactMe h3{
+    color: rgb(255, 194, 92);
+    border-bottom: 1px solid rgb(255, 194, 92) ;
+    padding-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+.home .techInfo .contactMe i{
+    color: rgb(255, 194, 92);
+}

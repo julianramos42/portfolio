@@ -5,27 +5,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 .present .presentTitle{
     color: #efefef;
     font-size: 50px;
 }
 .ease{
-    background-color: white;
-    transition: 1.5s;
-}
-.none{
-    display: none;
+    background-color: transparent;
+    transition: 1s;
 }
 .easeTitle{
     display: none;
 }
-
-/* NAV */
-
-nav{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
+.none{
+    display: none;
 }
