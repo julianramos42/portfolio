@@ -77,10 +77,17 @@ i{
     text-decoration: none;
     color: rgb(113, 116 , 127);
     font-size: 25px;
+    transition: .4s;
+}
+
+.home .techInfo .anchors a:hover{
+    color: #efefef;
+    transform: translateY(-5px);
 }
 
 .home .techInfo .anchors i{
     margin-top: 7px;
+    font-size: 18px;
 }
 
 .home .techInfo .anchors .active{
@@ -93,8 +100,28 @@ i{
     border-radius: 50%;
 }
 
-.home .techInfo .techDescription{
+.home .techInfo .techText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.home .techInfo .techText>p{
+    color: rgb(113, 116 , 127);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.home .techInfo .techText>div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.home .techInfo .techText>div .techDescription{
     color: #efefef;
+    font-weight: 500;
 }
 
 .home .techInfo .contactMe{

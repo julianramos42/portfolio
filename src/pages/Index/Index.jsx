@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Index.css'
 import { useRef } from 'react'
 import Home from '../Home/Home'
+import Trabajos from '../Trabajos/Trabajos'
 
 export default function Index() {
   let present = useRef()
   let presentTitle = useRef()
   let container = useRef()
+
+  let [selectedAnchor, setselectedAnchor] = useState('')
 
   setTimeout(() => {
     present.current?.classList.toggle('ease')
@@ -20,11 +23,12 @@ export default function Index() {
   return (
     <>
       <div className='present' ref={present}>
-        <h1 className='presentTitle' ref={presentTitle}>Julián Ramos</h1>
+        <h1 className='presentTitle' ref={presentTitle}>Elegi el idioma</h1>
       </div>
 
       <div ref={container}>
-        <Home/>
+        <Home setselectedAnchor={setselectedAnchor}/>
+        { selectedAnchor === 'trabajos' && <Trabajos/> }
       </div>
     </> 
   )

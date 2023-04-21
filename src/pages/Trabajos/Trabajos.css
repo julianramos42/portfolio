@@ -1,0 +1,10 @@
+.trabajos{
+    background-color: rgb(37, 39, 52);
+    height: 100vh;
+    padding: 75px 10vw 75px 10vw;
+    display: flex;
+}
+
+.trabajos div{
+    color: #efefef;
+}
