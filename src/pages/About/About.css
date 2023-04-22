@@ -3,8 +3,22 @@
     height: 100vh;
     padding: 75px 10vw 75px 10vw;
     display: flex;
+    align-items: center;
 }
 
-.about div{
+.about .about-text{
+    width: 60%;
     color: #efefef;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about .about-text p{
+    color: rgb(113, 116 , 127);
+}
+
+.about .about-img img{
+    width: 300px;
+    height: 600px;
 }

@@ -11,15 +11,16 @@ export default function Home({setselectedAnchor}) {
     function changeActive(e) {
         setAnchorActive(e.target.id)
         setselectedAnchor(e.target.id)
-        scrollToComponent(e.target.id)
+        setTimeout( () => {
+            scrollToComponent(e.target.id)
+        }, 100)
     }
 
     function scrollToComponent(id){
-        scroller.scrollTo(id, {
+        scroller.scrollTo(`container-${id}`, {
             duration: 1000,
             delay: 0,
             smooth: 'easeInOutQuart',
-            offset: window.innerHeight
         })
     }
 
