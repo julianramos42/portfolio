@@ -10,6 +10,22 @@ i{
     color: #efefef;
 }
 
+.back-top{
+    background-color: rgb(151, 196, 139);
+    color: rgb(51, 54, 70);
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 6px 8px; 
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.back-top:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .home .myInfo{
     background: url(../../images/persona.png);
     background-repeat: no-repeat;

@@ -3,6 +3,7 @@ import './Home.css'
 import logo from '../../images/logo.png'
 import { Link as Anchor } from 'react-router-dom'
 import { useState } from 'react'
+import { scroller } from 'react-scroll'
 
 export default function Home({setselectedAnchor}) {
     let [anchorActive, setAnchorActive] = useState('')
@@ -10,10 +11,28 @@ export default function Home({setselectedAnchor}) {
     function changeActive(e) {
         setAnchorActive(e.target.id)
         setselectedAnchor(e.target.id)
+        scrollToComponent(e.target.id)
+    }
+
+    function scrollToComponent(id){
+        scroller.scrollTo(id, {
+            duration: 1000,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+            offset: window.innerHeight
+        })
+    }
+
+    function scrollTop(){
+        scroller.scrollTo('home', {
+            duration: 1000,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+        })
     }
 
     return (
-        <div className='home'>
+        <div className='home' id='home'>
             <div className='myInfo'>
                 <img src={logo} className='logo' alt='logo' />
                 <section className='name'>
@@ -30,15 +49,15 @@ export default function Home({setselectedAnchor}) {
             <div className='techInfo'>
                 <nav className='anchors'>
                     <div>
-                        <Anchor className={anchorActive === 'trabajos' && 'active'} id='trabajos' onClick={changeActive}>Trabajos</Anchor>
+                        <Anchor className={anchorActive === 'trabajos' ? 'active' : ''} id='trabajos' onClick={changeActive}>Trabajos</Anchor>
                         <div className={anchorActive === 'trabajos' ? 'puntito' : 'none'}></div>
                     </div>
                     <div>
-                        <Anchor className={anchorActive === 'habilidades' && 'active'} id='habilidades' onClick={changeActive}>Habilidades</Anchor>
+                        <Anchor className={anchorActive === 'habilidades' ? 'active' : ''} id='habilidades' onClick={changeActive}>Habilidades</Anchor>
                         <div className={anchorActive === 'habilidades' ? 'puntito' : 'none'}></div>
                     </div>
                     <div>
-                        <Anchor className={anchorActive === 'about' && 'active'} id='about' onClick={changeActive}>Sobre Mí</Anchor>
+                        <Anchor className={anchorActive === 'about' ? 'active' : ''} id='about' onClick={changeActive}>Sobre Mí</Anchor>
                         <div className={anchorActive === 'about' ? 'puntito' : 'none'}></div>
                     </div>
                     <div><i className={anchorActive === '' ? 'fa-solid fa-arrow-left fa-beat' : 'none'}></i></div>
@@ -56,6 +75,7 @@ export default function Home({setselectedAnchor}) {
                     <i className="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
+            <i className={anchorActive ? 'fa-solid fa-arrow-up back-top' : 'none'} onClick={scrollTop}></i>
         </div>
     )
 }
