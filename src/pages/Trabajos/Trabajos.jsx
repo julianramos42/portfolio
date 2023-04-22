@@ -4,7 +4,7 @@ import './Trabajos.css'
 export default function Trabajos() {
   return (
     <div className='trabajos'>
-        <div>asd</div>
+        <div>Trabajos</div>
     </div>
   )
 }

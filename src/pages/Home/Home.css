@@ -1,7 +1,7 @@
 .home{
     background-color: rgb(51, 54, 70);
     height: 100vh;
-    padding: 75px 10vw 75px 10vw;
+    padding: 75px 10% 75px 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -11,15 +11,20 @@ i{
 }
 
 .home .myInfo{
+    background: url(../../images/persona.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    background-size: 300px 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 55%;
+    width: 53%;
 }
 
 .home .myInfo .logo{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
 }
 
@@ -34,7 +39,7 @@ i{
 .home .myInfo .name .barrita{
     margin-top: 10px;
     width: 50px;
-    border: 4px solid rgb(255, 194, 92);
+    border: 4px solid rgb(151, 196, 139);
 }
 
 .home .myInfo .redes{
@@ -88,6 +93,7 @@ i{
 .home .techInfo .anchors i{
     margin-top: 7px;
     font-size: 18px;
+    color: rgb(151, 196, 139);
 }
 
 .home .techInfo .anchors .active{
@@ -96,7 +102,7 @@ i{
 
 .home .techInfo .anchors .puntito{
     width: 10px;
-    border: 5px solid rgb(255, 194, 92);
+    border: 5px solid rgb(151, 196, 139);
     border-radius: 50%;
 }
 
@@ -137,12 +143,12 @@ i{
 }
 
 .home .techInfo .contactMe h3{
-    color: rgb(255, 194, 92);
-    border-bottom: 1px solid rgb(255, 194, 92) ;
+    color: rgb(151, 196, 139);
+    border-bottom: 1px solid rgb(151, 196, 139) ;
     padding-bottom: 3px;
     letter-spacing: 1px;
 }
 
 .home .techInfo .contactMe i{
-    color: rgb(255, 194, 92);
+    color: rgb(151, 196, 139);
 }

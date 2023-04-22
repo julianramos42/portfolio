@@ -3,6 +3,8 @@ import './Index.css'
 import { useRef } from 'react'
 import Home from '../Home/Home'
 import Trabajos from '../Trabajos/Trabajos'
+import Habilidades from '../Habilidades/Habilidades'
+import About from '../About/About'
 
 export default function Index() {
   let present = useRef()
@@ -29,6 +31,8 @@ export default function Index() {
       <div ref={container}>
         <Home setselectedAnchor={setselectedAnchor}/>
         { selectedAnchor === 'trabajos' && <Trabajos/> }
+        { selectedAnchor === 'habilidades' && <Habilidades/> }
+        { selectedAnchor === 'about' && <About/> }
       </div>
     </> 
   )

@@ -15,7 +15,7 @@ export default function Home({setselectedAnchor}) {
     return (
         <div className='home'>
             <div className='myInfo'>
-                <img src={logo} className='logo' />
+                <img src={logo} className='logo' alt='logo' />
                 <section className='name'>
                     <h1>Julián</h1>
                     <h1>Ramos.</h1>
