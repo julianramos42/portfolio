@@ -22,7 +22,7 @@ export default function Habilidades() {
     infinite: true,
     slidesToShow: slides,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true
   };

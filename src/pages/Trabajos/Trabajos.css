@@ -1,10 +1,105 @@
 .trabajos{
     background-color: rgb(37, 39, 52);
-    height: 100vh;
+    min-height: 100vh;
     padding: 75px 10vw 75px 10vw;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: #efefef;
 }
 
-.trabajos div{
+.trabajos>div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.screamers{
+    background: rgba(0,0,0,0.8) url(../../images/screamers.png);
+}
+.sunflower{
+    background: rgba(0,0,0,0.8) url(../../images/sunflower.png);
+}
+.amazing{
+    background: rgba(0,0,0,0.8) url(../../images/amazingevents.png);
+}
+.petshop{
+    background: rgba(0,0,0,0.8) url(../../images/petshop.png);
+}
+.minga{
+    background: rgba(0,0,0,0.8) url(../../images/minga.png);
+}
+.lance{
+    background: rgba(0,0,0,0.8) url(../../images/lance.png);
+}
+
+.trabajos .card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #efefef;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: .4s;
+    overflow: hidden;
+    border: 2px solid rgb(151, 196, 139);
+}
+
+.trabajos .card:hover{
+    background-blend-mode: darken;
+}
+
+.trabajos .card .card-text{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    padding-top: 200%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.trabajos .card .card-text:hover{
+    padding-top: 0;
+}
+
+.trabajos .card .card-text h2{
+    font-weight: 500;
+}
+
+.trabajos .card .card-text .card-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 40px;
+}
+
+.trabajos .card .card-text .card-icons a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.trabajos .card .card-text .card-icons a>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+    height: 40px;
+    transition: .4s;
+}
+
+.trabajos .card .card-text .card-icons a>div:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
 }
