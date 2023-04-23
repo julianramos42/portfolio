@@ -69,7 +69,7 @@ export default function Home({setselectedAnchor}) {
                         <h2 className='techDescription'>Desarrollador Web Full Stack – MERN</h2>
                         <h2 className='techDescription'>MongoDB, Express, React, NodeJs</h2>
                     </div>
-                    <p>Si estas buscando un desarrollador, me gustaría que estemos en contacto y así ayudarnos mutuamente a crecer</p>
+                    <p>Si estas buscando un desarrollador, me gustaría que estemos en contacto y así ayudarnos mutuamente a crecer.</p>
                 </div>
                 <div className='contactMe' id='contacto' onClick={changeActive}>
                     <h3 id='contacto' onClick={changeActive}>Contactame</h3>

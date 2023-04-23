@@ -1,4 +1,4 @@
-.home{
+.home {
     background-color: rgb(51, 54, 70);
     height: 100vh;
     padding: 75px 10% 75px 10%;
@@ -6,27 +6,27 @@
     justify-content: space-between;
 }
 
-i{
+i {
     color: #efefef;
 }
 
-.back-top{
+.back-top {
     background-color: rgb(151, 196, 139);
     color: rgb(51, 54, 70);
     position: fixed;
     bottom: 5%;
     right: 5%;
-    padding: 6px 8px; 
+    padding: 6px 8px;
     border-radius: 50%;
     transition: .4s;
 }
 
-.back-top:hover{
+.back-top:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.home .myInfo{
+.home .myInfo {
     background: url(../../images/persona.png);
     background-repeat: no-repeat;
     background-position-y: center;
@@ -38,55 +38,55 @@ i{
     width: 53%;
 }
 
-.home .myInfo .logo{
+.home .myInfo .logo {
     width: 90px;
     height: 90px;
     object-fit: cover;
 }
 
-.home .myInfo .name{
+.home .myInfo .name {
     color: #efefef;
 }
 
-.home .myInfo .name h1{
+.home .myInfo .name h1 {
     font-size: 60px;
 }
 
-.home .myInfo .name .barrita{
+.home .myInfo .name .barrita {
     margin-top: 10px;
     width: 50px;
     border: 4px solid rgb(151, 196, 139);
 }
 
-.home .myInfo .redes{
+.home .myInfo .redes {
     display: flex;
     gap: 20px;
 }
 
-.home .myInfo .redes a{
+.home .myInfo .redes a {
     transition: .4s;
 }
 
-.home .myInfo .redes a:hover{
+.home .myInfo .redes a:hover {
     transform: translateY(-5px);
 }
 
 /*  */
-.home .techInfo{
+.home .techInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 45%;
 }
 
-.home .techInfo .anchors{
+.home .techInfo .anchors {
     display: flex;
     justify-content: start;
     width: 100%;
     gap: 20px;
 }
 
-.home .techInfo .anchors>div{
+.home .techInfo .anchors>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,77 +94,184 @@ i{
     height: 50px;
 }
 
-.home .techInfo .anchors a{
+.home .techInfo .anchors a {
     text-decoration: none;
-    color: rgb(113, 116 , 127);
+    color: rgb(113, 116, 127);
     font-size: 25px;
     transition: .4s;
 }
 
-.home .techInfo .anchors a:hover{
+.home .techInfo .anchors a:hover {
     color: #efefef;
     transform: translateY(-5px);
 }
 
-.home .techInfo .anchors i{
+.home .techInfo .anchors i {
     margin-top: 7px;
     font-size: 18px;
     color: rgb(151, 196, 139);
 }
 
-.home .techInfo .anchors .active{
+.home .techInfo .anchors .active {
     color: #efefef;
 }
 
-.home .techInfo .anchors .puntito{
+.home .techInfo .anchors .puntito {
     width: 10px;
     border: 5px solid rgb(151, 196, 139);
     border-radius: 50%;
 }
 
-.home .techInfo .techText{
+.home .techInfo .techText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
 }
 
-.home .techInfo .techText>p{
-    color: rgb(113, 116 , 127);
+.home .techInfo .techText>p {
+    color: rgb(113, 116, 127);
     font-size: 16px;
     letter-spacing: 2px;
 }
 
-.home .techInfo .techText>div{
+.home .techInfo .techText>div {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.home .techInfo .techText>div .techDescription{
+.home .techInfo .techText>div .techDescription {
     color: #efefef;
     font-weight: 500;
 }
 
-.home .techInfo .contactMe{
+.home .techInfo .contactMe {
     display: flex;
     align-items: center;
     gap: 12px;
     transition: .4s;
 }
 
-.home .techInfo .contactMe:hover{
+.home .techInfo .contactMe:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
 
-.home .techInfo .contactMe h3{
+.home .techInfo .contactMe h3 {
     color: rgb(151, 196, 139);
-    border-bottom: 1px solid rgb(151, 196, 139) ;
+    border-bottom: 1px solid rgb(151, 196, 139);
     padding-bottom: 3px;
     letter-spacing: 1px;
 }
 
-.home .techInfo .contactMe i{
+.home .techInfo .contactMe i {
     color: rgb(151, 196, 139);
+}
+
+@media (max-width: 1259px) {
+    .home .myInfo {
+        width: 40%;
+    }
+
+    .home .techInfo{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1107px) {
+    .home{
+        padding: 65px 5% 65px 5%;
+    }
+
+    .home .myInfo {
+        width: 39%;
+    }
+
+    .home .techInfo{
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px){
+    .home{
+        flex-direction: column;
+        justify-content: start;
+        padding: 25px 5% 25px 5%;
+        gap: 50px;
+    }
+
+    .home .myInfo {
+        flex-direction: row;
+        background-image: none;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home .myInfo .logo{
+        display: none;
+    }
+
+    .home .myInfo .name{
+        display: flex;
+        gap: 10px;
+    }
+
+    .barrita{
+        display: none;
+    }
+
+    .home .myInfo .name h1{
+        font-size: 30px;
+    }
+
+    .home .techInfo{
+        width: 100%;
+        height: 70%;
+    }
+
+    .home .techInfo .anchors i{
+        margin-top: 3px;
+        font-size: 16px;
+    }
+
+    .home .techInfo .anchors a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 408px){
+    .home .myInfo .name h1{
+        font-size: 24px;
+    }
+
+    .home .myInfo .redes{
+        gap: 15px;
+    }
+
+    .home .myInfo .redes a i{
+        font-size: 18px;
+    }
+
+    .home .techInfo .anchors{
+        gap: 13px;
+    }
+
+    .home .techInfo{
+        height: 75%;
+    }
+
+    .home .techInfo .techText>div .techDescription{
+        font-size: 20px;
+    }
+
+    .home .techInfo .anchors i{
+        margin-top: 3px;
+        font-size: 14px;
+    }
+
+    .home .techInfo .anchors a{
+        font-size: 16px;
+    }
 }

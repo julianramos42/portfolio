@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Habilidades.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
 
 export default function Habilidades() {
+  let screenWidth = window.innerWidth
+  
+  let [slides,setSlides] = useState(3)
+  useEffect( () => {
+    if(screenWidth < 1023){
+      setSlides(2)
+    }
+    if(screenWidth < 649){
+      setSlides(1)
+    }
+  },[screenWidth])
+
   var settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: slides,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true
   };

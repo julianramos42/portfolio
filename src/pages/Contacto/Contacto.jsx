@@ -11,7 +11,7 @@ export default function Contacto() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_kqgic3o', 'template_leehb6s', form.current, '0YvX8r0UZHozF6N1s')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 if (result.text === 'OK') {
                     toast.success('Mensaje Enviado')

@@ -20,5 +20,26 @@
 
 .about .about-img img{
     width: 300px;
-    height: 600px;
+    height: 550px;
+}
+
+@media (max-width: 767px){
+    .about{
+        justify-content: center;
+    }
+
+    .about .about-text{
+        width: 100%;
+    }
+
+    .about .about-img{
+        display: none;
+    }
+}
+
+@media (max-width: 424px){
+    .about{
+        min-height: 100vh;
+        padding: 20px 5vw 20px 5vw;
+    }
 }
