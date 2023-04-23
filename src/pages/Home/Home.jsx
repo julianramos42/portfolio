@@ -71,9 +71,9 @@ export default function Home({setselectedAnchor}) {
                     </div>
                     <p>Si estas buscando un desarrollador, me gustaría que estemos en contacto y así ayudarnos mutuamente a crecer</p>
                 </div>
-                <div className='contactMe'>
-                    <h3>Contactame</h3>
-                    <i className="fa-solid fa-arrow-right"></i>
+                <div className='contactMe' id='contacto' onClick={changeActive}>
+                    <h3 id='contacto' onClick={changeActive}>Contactame</h3>
+                    <i className="fa-solid fa-arrow-right" id='contacto' onClick={changeActive}></i>
                 </div>
             </div>
             <i className={anchorActive ? 'fa-solid fa-arrow-up back-top' : 'none'} onClick={scrollTop}></i>

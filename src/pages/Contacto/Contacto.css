@@ -1,0 +1,69 @@
+.contacto{
+    background-color: rgb(37, 39, 52);
+    height: 100vh;
+    padding: 75px 10vw 75px 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .contacto-text{
+    width: 60%;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.contacto .contacto-text form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
+}
+
+.contacto .contacto-text form input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 8px;
+    background-color: rgb(42, 53, 55);
+    color: rgb(151, 196, 139);
+    outline: 2px solid rgb(151, 196, 139);
+    border: none;
+}
+
+.contacto .contacto-text form .submit{
+    border-radius: 10px;
+    background-color: rgb(42, 53, 55);
+    color: rgb(151, 196, 139);
+    font-weight: bold;
+    letter-spacing: 2px;
+    outline: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    transition: .4s;
+}
+
+.contacto .contacto-text form .submit:hover{
+    cursor: pointer;
+    background-color: rgb(47, 60, 61);
+    color: rgb(151, 196, 139);
+}
+
+.contacto .contacto-text form textarea{
+    height: 80px;
+    resize: none;
+    border-radius: 10px;
+    padding: 5px 8px;
+    background-color: rgb(42, 53, 55);
+    color: rgb(151, 196, 139);
+    outline: 2px solid rgb(151, 196, 139);
+}
+
+.contacto .contacto-img img{
+    width: 300px;
+    height: 600px;
+}

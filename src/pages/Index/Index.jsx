@@ -5,6 +5,7 @@ import Home from '../Home/Home'
 import Trabajos from '../Trabajos/Trabajos'
 import Habilidades from '../Habilidades/Habilidades'
 import About from '../About/About'
+import Contacto from '../Contacto/Contacto'
 
 export default function Index() {
   let present = useRef()
@@ -33,6 +34,7 @@ export default function Index() {
         { selectedAnchor === 'trabajos' && <Trabajos/> }
         { selectedAnchor === 'habilidades' && <Habilidades/> }
         { selectedAnchor === 'about' && <About/> }
+        { selectedAnchor === 'contacto' && <Contacto/> }
       </div>
     </> 
   )
