@@ -26,7 +26,7 @@ export default function Index() {
   return (
     <>
       <div className='present' ref={present}>
-        <h1 className='presentTitle' ref={presentTitle}>Elegi el idioma</h1>
+        <h1 className='presentTitle' ref={presentTitle}>Bienvenido!</h1>
       </div>
 
       <div ref={container}>
