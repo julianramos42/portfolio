@@ -36,6 +36,12 @@
 .lance{
     background: rgba(0,0,0,0.8) url(../../images/lance.png);
 }
+.dolar{
+    background: rgba(0,0,0,0.8) url(../../images/dolar-calculator.png);
+}   
+.redSocial{
+    background: rgba(0,0,0,0.8) url(../../images/red-social.png);
+}   
 
 .trabajos .card{
     background-size: cover;

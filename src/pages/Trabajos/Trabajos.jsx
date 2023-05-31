@@ -7,6 +7,28 @@ export default function Trabajos() {
     <div className='trabajos' id='container-trabajos'>
       <h2>Trabajos</h2>
       <div>
+        <section className='card redSocial'>
+          <div className='card-text'>
+            <h2>Red Social</h2>
+            <p>
+              Proyecto que combina tecnologias como HTML/CSS, Javascript, API REST, React, Nodejs, MongoDb, Express, Socket.io, Git y Github.
+            </p>
+            <div className='card-icons'>
+              <Anchor to={'https://github.com/julianramos42/red-social-front'} target='_blank'>
+                <div>
+                  <i className="fa-brands fa-github fa-xl"></i>
+                  <h5>Ver Codigo</h5>
+                </div>
+              </Anchor>
+              <Anchor to={'https://jr-red-social.vercel.app/'} target='_blank'>
+                <div>
+                  <i class="fa-brands fa-chrome fa-xl"></i>
+                  <h5>Ver Página</h5>
+                </div>
+              </Anchor>
+            </div>
+          </div>
+        </section>
         <section className='card lance'>
           <div className='card-text'>
             <h2>Lance</h2>
@@ -65,6 +87,28 @@ export default function Trabajos() {
                 </div>
               </Anchor>
               <Anchor to={'https://julianramos42.github.io/petshop/'} target='_blank'>
+                <div>
+                  <i class="fa-brands fa-chrome fa-xl"></i>
+                  <h5>Ver Página</h5>
+                </div>
+              </Anchor>
+            </div>
+          </div>
+        </section>
+        <section className='card dolar'>
+          <div className='card-text'>
+            <h2>Dolar Calculator</h2>
+            <p>
+              Proyecto que combina tecnologias como HTML/CSS, Javascript, API REST, React, Git y Github.
+            </p>
+            <div className='card-icons'>
+              <Anchor to={'https://github.com/julianramos42/dolar-calculator'} target='_blank'>
+                <div>
+                  <i className="fa-brands fa-github fa-xl"></i>
+                  <h5>Ver Codigo</h5>
+                </div>
+              </Anchor>
+              <Anchor to={'https://jr-dolar-calculator.vercel.app/'} target='_blank'>
                 <div>
                   <i class="fa-brands fa-chrome fa-xl"></i>
                   <h5>Ver Página</h5>
