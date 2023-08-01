@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import persona from '../../images/persona2.png'
+import persona from '../../images/persona2.webp'
 
 export default function About() {
   return (

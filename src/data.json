@@ -28,6 +28,13 @@
         "pagina": "https://julianramos42.github.io/petshop/"
     },
     {
+        "class": "todo-app",
+        "titulo": "To Do App",
+        "descripcion": "Proyecto que combina tecnologias como HTML/CSS, Javascript, React, LocalStorage, Git y Github.",
+        "github": "https://github.com/julianramos42/todo-app",
+        "pagina": "https://jr-todo-app.vercel.app/"
+    },
+    {
         "class": "dolar",
         "titulo": "Dolar Calculator",
         "descripcion": "Proyecto que combina tecnologias como HTML/CSS, Javascript, API REST, React, Git y Github.",

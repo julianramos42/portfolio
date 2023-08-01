@@ -1,7 +1,7 @@
 .trabajos{
     background-color: rgb(37, 39, 52);
     min-height: 100vh;
-    padding: 75px 10vw 75px 10vw;
+    padding: 75px 5vw 75px 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,33 +15,36 @@
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px 50px;
 }
 
 .screamers{
-    background: rgba(0,0,0,0.8) url(../../images/screamers.png);
+    background: rgba(0,0,0,0.8) url(../../images/screamers.webp);
 }
 .sunflower{
-    background: rgba(0,0,0,0.8) url(../../images/sunflower.png);
+    background: rgba(0,0,0,0.8) url(../../images/sunflower.webp);
 }
 .amazing{
-    background: rgba(0,0,0,0.8) url(../../images/amazingevents.png);
+    background: rgba(0,0,0,0.8) url(../../images/amazingevents.webp);
 }
 .petshop{
-    background: rgba(0,0,0,0.8) url(../../images/petshop.png);
+    background: rgba(0,0,0,0.8) url(../../images/petshop.webp);
 }
 .minga{
-    background: rgba(0,0,0,0.8) url(../../images/minga.png);
+    background: rgba(0,0,0,0.8) url(../../images/minga.webp);
 }
 .lance{
-    background: rgba(0,0,0,0.8) url(../../images/lance.png);
+    background: rgba(0,0,0,0.8) url(../../images/lance.webp);
 }
 .dolar{
-    background: rgba(0,0,0,0.8) url(../../images/dolar-calculator.png);
+    background: rgba(0,0,0,0.8) url(../../images/dolar-calculator.webp);
 }   
 .redSocial{
-    background: rgba(0,0,0,0.8) url(../../images/red-social.png);
+    background: rgba(0,0,0,0.8) url(../../images/red-social.webp);
 }   
+.todo-app{
+    background: rgba(0, 0, 0, 0.8) url(../../images/todo-app.webp);
+}
 
 .trabajos .card{
     background-size: cover;

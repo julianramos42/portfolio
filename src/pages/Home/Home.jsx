@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.webp'
 import { Link as Anchor } from 'react-router-dom'
 import { useState } from 'react'
 import { scroller } from 'react-scroll'

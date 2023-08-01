@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contacto.css'
-import persona from '../../images/persona3.png'
+import persona from '../../images/persona3.webp'
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
