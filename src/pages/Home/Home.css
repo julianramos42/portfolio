@@ -96,7 +96,7 @@ i {
 
 .home .techInfo .anchors a {
     text-decoration: none;
-    color: rgb(113, 116, 127);
+    color: #9ca0af;
     font-size: 25px;
     transition: .4s;
 }
@@ -130,7 +130,7 @@ i {
 }
 
 .home .techInfo .techText>p {
-    color: rgb(113, 116, 127);
+    color: #c5c9c5;
     font-size: 16px;
     letter-spacing: 2px;
 }

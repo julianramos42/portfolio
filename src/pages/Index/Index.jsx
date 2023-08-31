@@ -13,7 +13,7 @@ export default function Index() {
   let container = useRef()
   let [activePresent,setactivePresent] = useState(true)
 
-  let [selectedAnchor, setselectedAnchor] = useState('')
+  let [selectedAnchor, setselectedAnchor] = useState('trabajos')
 
   setTimeout(() => {
     present.current?.classList.toggle('ease')
@@ -27,11 +27,11 @@ export default function Index() {
 
   return (
     <>
-      {
+      {/* {
         activePresent ? <div className='present' ref={present}>
         <h1 className='presentTitle' ref={presentTitle}>Bienvenido!</h1>
       </div> : ''
-      }
+      } */}
 
       <div ref={container}>
         <Home setselectedAnchor={setselectedAnchor}/>
